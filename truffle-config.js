@@ -6,10 +6,11 @@ module.exports = {
       network_id: '*', // Match any network id
     },
   },
-  contracts_directory: './ethereum/contracts/',
-  contracts_build_directory: './ethereum/abis/',
+  contracts_directory: './contracts/',
+  contracts_build_directory: './abis/',
   compilers: {
     solc: {
+      version: '^0.8.2',
       optimizer: {
         enabled: true,
         runs: 200,
